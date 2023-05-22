@@ -89,12 +89,12 @@
 
       <div class="row">
         <div class="col-lg-4" data-aos="fade-right">
-          <div style="display: flex; justify-content: center; align-items: center; border: 1px solid black; padding: 10px; border-radius: 50%;">
+          <div class="glowing-border">
             <img src="assets/img/jahid.png" class="img-fluid" alt="" style="border-radius: 50%; max-width: 100%; height: auto;">
-          </div>
+        </div>
         </div>
         
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left" style="text-align: justify;">
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left" style="text-align: justify; font-size: 20px;">
           <p style="text-align: justify;">
             <strong>Jahid Hasan</strong> is an innovative strategic entrepreneur and researcher passionate about bringing cutting-edge technological creativity to the video game industry. 
           </p>
@@ -107,19 +107,46 @@
             <p id="animated-text">Aspiring <strong>PROJECT MANAGER / PRODUCER</strong> seeking <strong>INTERNSHIP</strong> opportunity. 
             </p>
         </div>
+        <style>
+            .glowing-border {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid black;
+                padding: 10px;
+                border-radius: 50%;
+                transition: transform 2s;
+                animation: glow 2s ease-in-out infinite;
+            }
+        
+            .glowing-border:hover {
+                transform: scale(1.1);
+            }
+        
+            @keyframes glow {
+                0%, 100% {
+                    box-shadow: 0 0 2px #00008b, 0 0 4px #00008b;
+                }
+                50% {
+                    box-shadow: 0 0 3px #00008b, 0 0 6px #00008b;
+                }
+            }
+        </style>
+        
+        
 
           <style>
             #animated-text {
-              text-align: center;
-              font-size: 20px;
-              color: red;
-              border: 2px solid #007bff;
-              padding: 10px;
-              border-radius: 20px;
-              animation: glow 2s ease-in-out infinite;
-            }
+  text-align: center;
+  font-size: 20px;
+  color: red;
+  border: 2px solid #007bff;
+  padding: 10px;
+  border-radius: 20px;
+  animation: glow 2s ease-in-out infinite;
+}
 
-          @keyframes glow {
+@keyframes glow {
         0% {
             box-shadow: 0 0 5px #007bff, 0 0 10px #007bff, 0 0 15px #007bff, 0 0 20px #007bff;
         }
@@ -130,6 +157,7 @@
             box-shadow: 0 0 5px #007bff, 0 0 10px #007bff, 0 0 15px #007bff, 0 0 20px #007bff;
         }
     }
+
           </style>
 
           </div>
