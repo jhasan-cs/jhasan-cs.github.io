@@ -1103,3 +1103,13 @@ section .container {
   width: 350px; /* set the desired width */
   height: 250px; /* set the desired height */
 }
+
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
